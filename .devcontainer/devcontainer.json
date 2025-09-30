@@ -7,7 +7,10 @@
 		"context": "..",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
 		"dockerfile": "../dev-env.dockerfile"
-	}
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	, "features": {
