@@ -23,6 +23,4 @@ RUN curl -s https://ohmyposh.dev/install.sh | bash -s
 
 COPY ./.bashrc ~/.bashrc
 
-#RUN npm install
 
-EXPOSE 3000

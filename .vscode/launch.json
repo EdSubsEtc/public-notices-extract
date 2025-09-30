@@ -8,10 +8,11 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Launch Program",
+			"name": "Debug",
 			"skipFiles": [
 				"<node_internals>/**"
 			],
+			"preLaunchTask": "tsc: build - tsconfig.json",
 			"program": "${workspaceFolder}/src/index.ts", // The main entry point of your TS app
 			"envFile": "${workspaceFolder}/dev.env",
 			"outFiles": [
